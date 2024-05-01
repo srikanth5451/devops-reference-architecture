@@ -1,0 +1,9 @@
+
+# 2025-04-07 - docs: Update disaster recovery plan
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+metadata:
+  name: monitoring
+spec:
+  hosts:
+  - "web.staging.example.com"

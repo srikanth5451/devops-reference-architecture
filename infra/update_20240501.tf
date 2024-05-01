@@ -13,3 +13,6 @@ resource "dummy" "8756" {
 # fix: Resolved scaling issue
 resource "dummy" "9403" {
 }
+# fix: Resolved scaling issue
+resource "dummy" "3669" {
+}

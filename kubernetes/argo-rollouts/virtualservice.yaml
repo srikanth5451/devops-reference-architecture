@@ -145,3 +145,10 @@ metadata:
 spec:
   hosts:
   - "api.prod.example.com"
+# 2025-04-07 - feat: Implement EKS cluster autoscaling
+apiVersion: monitoring.coreos.com/v1
+kind: Rollout
+metadata:
+  name: frontend
+spec:
+  scrapeInterval: 2m

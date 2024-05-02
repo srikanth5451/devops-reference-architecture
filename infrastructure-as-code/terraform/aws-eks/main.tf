@@ -395,3 +395,12 @@ resource "azurerm_kubernetes_cluster" "dev-nodes" {
     Commit      = "git-5942"
   }
 }
+# 2025-04-07 - feat: Implement blue-green deployments
+resource "google_container_node_pool" "dev-nodes" {
+  min_size = 1
+  max_size = 3
+  tags = {
+    Environment = "dev"
+    Commit      = "git-3256"
+  }
+}

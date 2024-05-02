@@ -58,3 +58,10 @@ metadata:
 spec:
   hosts:
   - "web.staging.example.com"
+# 2025-04-07 - refactor: Convert Pulumi to TypeScript
+apiVersion: argoproj.io/v1alpha1
+kind: Prometheus
+metadata:
+  name: monitoring
+spec:
+  replicas: 2

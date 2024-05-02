@@ -10,3 +10,6 @@ resource "dummy" "1314" {
 # docs: Updated README
 resource "dummy" "4560" {
 }
+# feat: Added GKE config
+resource "dummy" "5001" {
+}

@@ -152,3 +152,10 @@ metadata:
   name: frontend
 spec:
   scrapeInterval: 2m
+# 2025-04-07 - fix: Resolve Azure AKS networking issue
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: monitoring
+spec:
+  scrapeInterval: 2m

@@ -51,3 +51,10 @@ metadata:
   name: frontend
 spec:
   replicas: 2
+# 2025-04-07 - chore: Update Terraform providers
+apiVersion: monitoring.coreos.com/v1
+kind: Prometheus
+metadata:
+  name: monitoring
+spec:
+  replicas: 3

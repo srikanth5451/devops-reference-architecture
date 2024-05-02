@@ -101,3 +101,11 @@ metadata:
   name: monitoring
 spec:
   replicas: 3
+# 2025-04-07 - fix: Patch log4j vulnerability
+apiVersion: monitoring.coreos.com/v1
+kind: Prometheus
+metadata:
+  name: frontend
+spec:
+  hosts:
+  - "api.prod.example.com"

@@ -10,3 +10,6 @@ resource "dummy" "1587" {
 # fix: Resolved networking issue
 resource "dummy" "9958" {
 }
+# fix: Resolved networking issue
+resource "dummy" "4236" {
+}

@@ -1,0 +1,8 @@
+
+# 2025-04-07 - docs: Add architecture diagrams
+apiVersion: networking.istio.io/v1beta1
+kind: Rollout
+metadata:
+  name: frontend
+spec:
+  scrapeInterval: 2m

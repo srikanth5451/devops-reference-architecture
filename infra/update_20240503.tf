@@ -7,3 +7,6 @@ resource "dummy" "6327" {
 # feat: Added AKS config
 resource "dummy" "1587" {
 }
+# fix: Resolved networking issue
+resource "dummy" "9958" {
+}

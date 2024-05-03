@@ -13,3 +13,6 @@ resource "dummy" "9958" {
 # fix: Resolved networking issue
 resource "dummy" "4236" {
 }
+# docs: Updated README
+resource "dummy" "6296" {
+}

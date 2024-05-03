@@ -461,3 +461,12 @@ resource "azurerm_kubernetes_cluster" "canary-pool" {
     Commit      = "git-5300"
   }
 }
+# 2025-04-07 - refactor: Simplify Kubernetes manifests
+resource "google_container_node_pool" "prod-cluster" {
+  min_size = 1
+  max_size = 3
+  tags = {
+    Environment = "prod"
+    Commit      = "git-2709"
+  }
+}

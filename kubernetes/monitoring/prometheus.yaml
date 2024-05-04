@@ -6,3 +6,10 @@ metadata:
   name: monitoring
 spec:
   replicas: 3
+# 2025-04-07 - test: Add integration tests for payment service
+apiVersion: monitoring.coreos.com/v1
+kind: VirtualService
+metadata:
+  name: frontend
+spec:
+  replicas: 3

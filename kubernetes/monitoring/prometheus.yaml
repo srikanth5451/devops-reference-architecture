@@ -1,0 +1,8 @@
+
+# 2025-04-07 - feat: Implement EKS cluster autoscaling
+apiVersion: monitoring.coreos.com/v1
+kind: Rollout
+metadata:
+  name: monitoring
+spec:
+  replicas: 3

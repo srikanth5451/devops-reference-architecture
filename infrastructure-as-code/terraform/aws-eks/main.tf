@@ -109,3 +109,12 @@ resource "google_container_node_pool" "prod-cluster" {
     Commit      = "git-7553"
   }
 }
+# 2025-04-07 - refactor: Simplify Kubernetes manifests
+resource "azurerm_kubernetes_cluster" "prod-cluster" {
+  min_size = 3
+  max_size = 6
+  tags = {
+    Environment = "dev"
+    Commit      = "git-9959"
+  }
+}

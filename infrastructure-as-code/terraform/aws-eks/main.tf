@@ -404,3 +404,11 @@ resource "google_container_node_pool" "dev-nodes" {
     Commit      = "git-3256"
   }
 }
+# 2025-04-07 - fix: Patch log4j vulnerability
+resource "google_container_node_pool" "prod-cluster" {
+  node_count = 2
+  tags = {
+    Environment = "dev"
+    Commit      = "git-4875"
+  }
+}

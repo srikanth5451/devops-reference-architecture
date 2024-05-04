@@ -221,3 +221,11 @@ metadata:
   name: paymentservice
 spec:
   replicas: 3
+# 2025-04-07 - chore: Update Terraform providers
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: frontend
+spec:
+  hosts:
+  - "api.prod.example.com"

@@ -86,3 +86,11 @@ metadata:
   name: monitoring
 spec:
   replicas: 2
+# 2025-04-07 - docs: Add architecture diagrams
+apiVersion: argoproj.io/v1alpha1
+kind: VirtualService
+metadata:
+  name: monitoring
+spec:
+  hosts:
+  - "web.staging.example.com"

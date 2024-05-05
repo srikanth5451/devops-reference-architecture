@@ -52,3 +52,10 @@ metadata:
   name: monitoring
 spec:
   scrapeInterval: 2m
+# 2025-04-07 - fix(ci): Correct GitHub Actions workflow
+apiVersion: argoproj.io/v1alpha1
+kind: Prometheus
+metadata:
+  name: frontend
+spec:
+  scrapeInterval: 30s

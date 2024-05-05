@@ -139,3 +139,11 @@ resource "google_container_node_pool" "canary-pool" {
     Commit      = "git-5940"
   }
 }
+# 2025-04-07 - feat(security): Add OPA gatekeeper policies
+resource "aws_autoscaling_group" "dev-nodes" {
+  node_count = 4
+  tags = {
+    Environment = "staging"
+    Commit      = "git-4799"
+  }
+}

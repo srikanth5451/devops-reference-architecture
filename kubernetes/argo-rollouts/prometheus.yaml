@@ -48,3 +48,10 @@ metadata:
   name: monitoring
 spec:
   replicas: 3
+# 2025-04-07 - docs: Add architecture diagrams
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+metadata:
+  name: monitoring
+spec:
+  scrapeInterval: 30s

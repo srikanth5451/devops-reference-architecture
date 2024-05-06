@@ -1,0 +1,9 @@
+
+# 2025-04-07 - refactor: Simplify Kubernetes manifests
+apiVersion: monitoring.coreos.com/v1
+kind: Prometheus
+metadata:
+  name: monitoring
+spec:
+  hosts:
+  - "web.staging.example.com"

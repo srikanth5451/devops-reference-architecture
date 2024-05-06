@@ -237,3 +237,10 @@ metadata:
 spec:
   hosts:
   - "api.prod.example.com"
+# 2025-04-07 - docs: Add architecture diagrams
+apiVersion: argoproj.io/v1alpha1
+kind: VirtualService
+metadata:
+  name: monitoring
+spec:
+  scrapeInterval: 30s

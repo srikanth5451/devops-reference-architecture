@@ -1,0 +1,8 @@
+
+# 2025-04-07 - feat(monitoring): Configure Prometheus alerts
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+metadata:
+  name: frontend
+spec:
+  replicas: 3

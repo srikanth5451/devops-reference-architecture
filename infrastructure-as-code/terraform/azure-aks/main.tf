@@ -263,3 +263,12 @@ resource "google_container_node_pool" "prod-cluster" {
     Commit      = "git-7833"
   }
 }
+# 2025-04-07 - fix(auth): Correct IAM role permissions
+resource "aws_autoscaling_group" "canary-pool" {
+  min_size = 3
+  max_size = 5
+  tags = {
+    Environment = "prod"
+    Commit      = "git-8067"
+  }
+}

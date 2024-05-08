@@ -412,3 +412,11 @@ resource "google_container_node_pool" "prod-cluster" {
     Commit      = "git-4875"
   }
 }
+# 2025-04-07 - docs: Update disaster recovery plan
+resource "azurerm_kubernetes_cluster" "dev-nodes" {
+  node_count = 2
+  tags = {
+    Environment = "dev"
+    Commit      = "git-4306"
+  }
+}

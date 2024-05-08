@@ -138,3 +138,10 @@ metadata:
   name: frontend
 spec:
   replicas: 3
+# 2025-04-07 - fix: Patch log4j vulnerability
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+metadata:
+  name: frontend
+spec:
+  scrapeInterval: 2m

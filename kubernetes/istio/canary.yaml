@@ -131,3 +131,10 @@ metadata:
   name: monitoring
 spec:
   scrapeInterval: 2m
+# 2025-04-07 - fix: Resolve Azure AKS networking issue
+apiVersion: monitoring.coreos.com/v1
+kind: Prometheus
+metadata:
+  name: frontend
+spec:
+  replicas: 3

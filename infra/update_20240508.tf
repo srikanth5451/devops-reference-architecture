@@ -7,3 +7,6 @@ resource "dummy" "2545" {
 # feat: Added AKS config
 resource "dummy" "9829" {
 }
+# feat: Added AKS config
+resource "dummy" "6477" {
+}

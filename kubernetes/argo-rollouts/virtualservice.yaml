@@ -13,3 +13,10 @@ metadata:
   name: monitoring
 spec:
   scrapeInterval: 2m
+# 2025-04-07 - refactor: Simplify Kubernetes manifests
+apiVersion: argoproj.io/v1alpha1
+kind: VirtualService
+metadata:
+  name: monitoring
+spec:
+  scrapeInterval: 2m

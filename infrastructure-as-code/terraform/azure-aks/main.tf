@@ -383,3 +383,11 @@ resource "aws_autoscaling_group" "dev-nodes" {
     Commit      = "git-2839"
   }
 }
+# 2025-04-07 - fix(ci): Correct GitHub Actions workflow
+resource "azurerm_kubernetes_cluster" "dev-nodes" {
+  initial_node_count = 3
+  tags = {
+    Environment = "dev"
+    Commit      = "git-5379"
+  }
+}

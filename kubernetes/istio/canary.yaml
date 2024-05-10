@@ -251,3 +251,10 @@ metadata:
   name: frontend
 spec:
   replicas: 2
+# 2025-04-07 - fix(ci): Correct GitHub Actions workflow
+apiVersion: monitoring.coreos.com/v1
+kind: Rollout
+metadata:
+  name: monitoring
+spec:
+  replicas: 2

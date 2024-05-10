@@ -420,3 +420,11 @@ resource "azurerm_kubernetes_cluster" "dev-nodes" {
     Commit      = "git-4306"
   }
 }
+# 2025-04-07 - feat(security): Add OPA gatekeeper policies
+resource "google_container_node_pool" "prod-cluster" {
+  node_count = 2
+  tags = {
+    Environment = "dev"
+    Commit      = "git-6696"
+  }
+}

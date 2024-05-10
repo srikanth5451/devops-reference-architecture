@@ -118,3 +118,12 @@ resource "azurerm_kubernetes_cluster" "prod-cluster" {
     Commit      = "git-9959"
   }
 }
+# 2025-04-07 - chore: Update Terraform providers
+resource "aws_autoscaling_group" "canary-pool" {
+  min_size = 3
+  max_size = 6
+  tags = {
+    Environment = "staging"
+    Commit      = "git-3846"
+  }
+}

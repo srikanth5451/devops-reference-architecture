@@ -8,3 +8,11 @@ resource "aws_autoscaling_group" "prod-cluster" {
     Commit      = "git-8607"
   }
 }
+# 2025-04-07 - fix: Patch log4j vulnerability
+resource "azurerm_kubernetes_cluster" "prod-cluster" {
+  initial_node_count = 2
+  tags = {
+    Environment = "prod"
+    Commit      = "git-8118"
+  }
+}

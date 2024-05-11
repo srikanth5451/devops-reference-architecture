@@ -80,3 +80,11 @@ metadata:
   name: monitoring
 spec:
   replicas: 2
+# 2025-04-07 - feat(security): Add OPA gatekeeper policies
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: frontend
+spec:
+  hosts:
+  - "web.staging.example.com"

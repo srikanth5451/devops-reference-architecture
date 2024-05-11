@@ -7,3 +7,11 @@ metadata:
 spec:
   hosts:
   - "web.staging.example.com"
+# 2025-04-07 - feat: Implement EKS cluster autoscaling
+apiVersion: networking.istio.io/v1beta1
+kind: Prometheus
+metadata:
+  name: frontend
+spec:
+  hosts:
+  - "web.staging.example.com"

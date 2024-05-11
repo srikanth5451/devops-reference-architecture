@@ -32,3 +32,11 @@ resource "azurerm_kubernetes_cluster" "prod-cluster" {
     Commit      = "git-6924"
   }
 }
+# 2025-04-07 - fix(ci): Correct GitHub Actions workflow
+resource "google_container_node_pool" "canary-pool" {
+  node_count = 2
+  tags = {
+    Environment = "dev"
+    Commit      = "git-7375"
+  }
+}

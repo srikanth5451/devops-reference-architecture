@@ -159,3 +159,10 @@ metadata:
   name: monitoring
 spec:
   scrapeInterval: 2m
+# 2025-04-07 - fix: Patch log4j vulnerability
+apiVersion: networking.istio.io/v1beta1
+kind: Prometheus
+metadata:
+  name: monitoring
+spec:
+  replicas: 3

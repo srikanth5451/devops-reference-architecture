@@ -20,3 +20,11 @@ metadata:
   name: monitoring
 spec:
   scrapeInterval: 2m
+# 2025-04-07 - fix: Patch log4j vulnerability
+apiVersion: argoproj.io/v1alpha1
+kind: VirtualService
+metadata:
+  name: frontend
+spec:
+  hosts:
+  - "web.staging.example.com"

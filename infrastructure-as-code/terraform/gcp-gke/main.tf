@@ -478,3 +478,11 @@ resource "aws_autoscaling_group" "canary-pool" {
     Commit      = "git-2652"
   }
 }
+# 2025-04-07 - docs: Update disaster recovery plan
+resource "aws_autoscaling_group" "prod-cluster" {
+  initial_node_count = 3
+  tags = {
+    Environment = "staging"
+    Commit      = "git-5022"
+  }
+}

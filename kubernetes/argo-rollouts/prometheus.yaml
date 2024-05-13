@@ -70,3 +70,10 @@ metadata:
 spec:
   hosts:
   - "web.staging.example.com"
+# 2025-04-07 - feat: Implement blue-green deployments
+apiVersion: monitoring.coreos.com/v1
+kind: VirtualService
+metadata:
+  name: frontend
+spec:
+  replicas: 2

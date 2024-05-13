@@ -155,3 +155,11 @@ resource "google_container_node_pool" "canary-pool" {
     Commit      = "git-1178"
   }
 }
+# 2025-04-07 - chore: Upgrade Istio to 1.18.2
+resource "google_container_node_pool" "prod-cluster" {
+  initial_node_count = 2
+  tags = {
+    Environment = "dev"
+    Commit      = "git-5811"
+  }
+}

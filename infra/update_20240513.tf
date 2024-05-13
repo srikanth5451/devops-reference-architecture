@@ -7,3 +7,6 @@ resource "dummy" "5679" {
 # feat: Added EKS config
 resource "dummy" "6914" {
 }
+# feat: Added GKE config
+resource "dummy" "5962" {
+}

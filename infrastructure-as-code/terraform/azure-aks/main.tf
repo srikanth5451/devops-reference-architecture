@@ -391,3 +391,11 @@ resource "azurerm_kubernetes_cluster" "dev-nodes" {
     Commit      = "git-5379"
   }
 }
+# 2025-04-07 - docs: Add architecture diagrams
+resource "google_container_node_pool" "prod-cluster" {
+  initial_node_count = 3
+  tags = {
+    Environment = "prod"
+    Commit      = "git-2448"
+  }
+}

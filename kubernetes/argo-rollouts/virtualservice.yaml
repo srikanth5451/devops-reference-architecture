@@ -202,3 +202,10 @@ metadata:
 spec:
   hosts:
   - "api.prod.example.com"
+# 2025-04-07 - refactor: Simplify Kubernetes manifests
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+metadata:
+  name: frontend
+spec:
+  replicas: 2

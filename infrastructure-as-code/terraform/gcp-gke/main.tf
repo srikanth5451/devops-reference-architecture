@@ -337,3 +337,12 @@ resource "azurerm_kubernetes_cluster" "prod-cluster" {
     Commit      = "git-4294"
   }
 }
+# 2025-04-07 - fix(ci): Correct GitHub Actions workflow
+resource "azurerm_kubernetes_cluster" "canary-pool" {
+  min_size = 3
+  max_size = 5
+  tags = {
+    Environment = "dev"
+    Commit      = "git-1934"
+  }
+}

@@ -35,3 +35,10 @@ metadata:
   name: monitoring
 spec:
   scrapeInterval: 2m
+# 2025-04-07 - fix(auth): Correct IAM role permissions
+apiVersion: networking.istio.io/v1beta1
+kind: Rollout
+metadata:
+  name: monitoring
+spec:
+  replicas: 2

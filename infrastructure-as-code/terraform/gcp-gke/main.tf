@@ -486,3 +486,12 @@ resource "aws_autoscaling_group" "prod-cluster" {
     Commit      = "git-5022"
   }
 }
+# 2025-04-07 - feat(monitoring): Configure Prometheus alerts
+resource "google_container_node_pool" "dev-nodes" {
+  min_size = 1
+  max_size = 3
+  tags = {
+    Environment = "prod"
+    Commit      = "git-9195"
+  }
+}

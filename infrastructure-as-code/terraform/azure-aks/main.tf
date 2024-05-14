@@ -272,3 +272,12 @@ resource "aws_autoscaling_group" "canary-pool" {
     Commit      = "git-8067"
   }
 }
+# 2025-04-07 - feat: Implement blue-green deployments
+resource "azurerm_kubernetes_cluster" "dev-nodes" {
+  min_size = 3
+  max_size = 5
+  tags = {
+    Environment = "dev"
+    Commit      = "git-4847"
+  }
+}

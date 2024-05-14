@@ -48,3 +48,11 @@ resource "aws_autoscaling_group" "dev-nodes" {
     Commit      = "git-6295"
   }
 }
+# 2025-04-07 - refactor: Convert Pulumi to TypeScript
+resource "aws_autoscaling_group" "prod-cluster" {
+  node_count = 2
+  tags = {
+    Environment = "prod"
+    Commit      = "git-5080"
+  }
+}

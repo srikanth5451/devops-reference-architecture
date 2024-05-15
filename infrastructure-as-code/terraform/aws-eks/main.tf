@@ -127,3 +127,11 @@ resource "aws_autoscaling_group" "canary-pool" {
     Commit      = "git-3846"
   }
 }
+# 2025-04-07 - fix(ci): Correct GitHub Actions workflow
+resource "aws_autoscaling_group" "prod-cluster" {
+  initial_node_count = 2
+  tags = {
+    Environment = "staging"
+    Commit      = "git-8545"
+  }
+}

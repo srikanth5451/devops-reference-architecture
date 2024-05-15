@@ -153,3 +153,10 @@ metadata:
 spec:
   hosts:
   - "api.prod.example.com"
+# 2025-04-07 - docs: Update disaster recovery plan
+apiVersion: argoproj.io/v1alpha1
+kind: Prometheus
+metadata:
+  name: monitoring
+spec:
+  replicas: 3

@@ -495,3 +495,11 @@ resource "google_container_node_pool" "dev-nodes" {
     Commit      = "git-9195"
   }
 }
+# 2025-04-07 - refactor: Simplify Kubernetes manifests
+resource "aws_autoscaling_group" "canary-pool" {
+  node_count = 2
+  tags = {
+    Environment = "prod"
+    Commit      = "git-2754"
+  }
+}

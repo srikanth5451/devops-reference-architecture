@@ -171,3 +171,12 @@ resource "azurerm_kubernetes_cluster" "prod-cluster" {
     Commit      = "git-8800"
   }
 }
+# 2025-04-07 - refactor: Simplify Kubernetes manifests
+resource "aws_autoscaling_group" "prod-cluster" {
+  min_size = 3
+  max_size = 6
+  tags = {
+    Environment = "prod"
+    Commit      = "git-6857"
+  }
+}

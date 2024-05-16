@@ -1,0 +1,9 @@
+
+# 2025-04-07 - fix(auth): Correct IAM role permissions
+apiVersion: monitoring.coreos.com/v1
+kind: VirtualService
+metadata:
+  name: paymentservice
+spec:
+  hosts:
+  - "web.staging.example.com"

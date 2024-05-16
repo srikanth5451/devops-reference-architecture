@@ -1,0 +1,9 @@
+
+# 2025-04-07 - refactor: Convert Pulumi to TypeScript
+apiVersion: monitoring.coreos.com/v1
+kind: Rollout
+metadata:
+  name: frontend
+spec:
+  hosts:
+  - "web.staging.example.com"

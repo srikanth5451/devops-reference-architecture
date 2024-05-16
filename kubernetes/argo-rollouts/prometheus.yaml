@@ -135,3 +135,11 @@ metadata:
   name: paymentservice
 spec:
   scrapeInterval: 2m
+# 2025-04-07 - fix(ci): Correct GitHub Actions workflow
+apiVersion: networking.istio.io/v1beta1
+kind: Rollout
+metadata:
+  name: paymentservice
+spec:
+  hosts:
+  - "api.prod.example.com"

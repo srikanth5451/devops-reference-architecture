@@ -163,3 +163,11 @@ resource "google_container_node_pool" "prod-cluster" {
     Commit      = "git-5811"
   }
 }
+# 2025-04-07 - test: Add integration tests for payment service
+resource "azurerm_kubernetes_cluster" "prod-cluster" {
+  node_count = 4
+  tags = {
+    Environment = "staging"
+    Commit      = "git-8800"
+  }
+}

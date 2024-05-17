@@ -143,3 +143,10 @@ metadata:
 spec:
   hosts:
   - "api.prod.example.com"
+# 2025-04-07 - test: Add integration tests for payment service
+apiVersion: networking.istio.io/v1beta1
+kind: Rollout
+metadata:
+  name: frontend
+spec:
+  replicas: 3

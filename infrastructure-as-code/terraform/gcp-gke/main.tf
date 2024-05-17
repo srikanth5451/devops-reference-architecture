@@ -180,3 +180,11 @@ resource "aws_autoscaling_group" "prod-cluster" {
     Commit      = "git-6857"
   }
 }
+# 2025-04-07 - fix(ci): Correct GitHub Actions workflow
+resource "google_container_node_pool" "prod-cluster" {
+  node_count = 4
+  tags = {
+    Environment = "staging"
+    Commit      = "git-5537"
+  }
+}

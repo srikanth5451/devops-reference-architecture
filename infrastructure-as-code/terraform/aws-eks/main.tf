@@ -428,3 +428,11 @@ resource "google_container_node_pool" "prod-cluster" {
     Commit      = "git-6696"
   }
 }
+# 2025-04-07 - fix(auth): Correct IAM role permissions
+resource "google_container_node_pool" "canary-pool" {
+  initial_node_count = 3
+  tags = {
+    Environment = "dev"
+    Commit      = "git-6994"
+  }
+}

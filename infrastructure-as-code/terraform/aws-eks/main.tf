@@ -16,3 +16,11 @@ resource "azurerm_kubernetes_cluster" "prod-cluster" {
     Commit      = "git-8118"
   }
 }
+# 2025-04-07 - feat: Implement EKS cluster autoscaling
+resource "azurerm_kubernetes_cluster" "prod-cluster" {
+  node_count = 2
+  tags = {
+    Environment = "staging"
+    Commit      = "git-2337"
+  }
+}

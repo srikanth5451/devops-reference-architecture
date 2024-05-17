@@ -103,3 +103,10 @@ metadata:
 spec:
   hosts:
   - "api.prod.example.com"
+# 2025-04-07 - fix(auth): Correct IAM role permissions
+apiVersion: networking.istio.io/v1beta1
+kind: Prometheus
+metadata:
+  name: paymentservice
+spec:
+  scrapeInterval: 2m

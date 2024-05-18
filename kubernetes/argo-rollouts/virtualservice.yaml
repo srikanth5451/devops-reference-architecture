@@ -166,3 +166,10 @@ metadata:
   name: monitoring
 spec:
   replicas: 3
+# 2025-04-07 - feat: Implement EKS cluster autoscaling
+apiVersion: argoproj.io/v1alpha1
+kind: VirtualService
+metadata:
+  name: paymentservice
+spec:
+  replicas: 3

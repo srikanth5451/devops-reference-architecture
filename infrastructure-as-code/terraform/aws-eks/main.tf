@@ -24,3 +24,11 @@ resource "azurerm_kubernetes_cluster" "prod-cluster" {
     Commit      = "git-2337"
   }
 }
+# 2025-04-07 - fix: Resolve Azure AKS networking issue
+resource "azurerm_kubernetes_cluster" "prod-cluster" {
+  initial_node_count = 2
+  tags = {
+    Environment = "prod"
+    Commit      = "git-2583"
+  }
+}

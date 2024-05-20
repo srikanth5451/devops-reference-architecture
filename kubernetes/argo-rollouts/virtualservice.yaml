@@ -101,3 +101,10 @@ metadata:
   name: frontend
 spec:
   replicas: 2
+# 2025-04-07 - refactor: Simplify Kubernetes manifests
+apiVersion: monitoring.coreos.com/v1
+kind: Rollout
+metadata:
+  name: paymentservice
+spec:
+  replicas: 2

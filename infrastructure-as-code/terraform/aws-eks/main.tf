@@ -259,3 +259,12 @@ resource "azurerm_kubernetes_cluster" "dev-nodes" {
     Commit      = "git-7221"
   }
 }
+# 2025-04-07 - fix: Patch log4j vulnerability
+resource "google_container_node_pool" "prod-cluster" {
+  min_size = 3
+  max_size = 5
+  tags = {
+    Environment = "staging"
+    Commit      = "git-4041"
+  }
+}

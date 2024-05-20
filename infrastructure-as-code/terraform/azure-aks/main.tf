@@ -290,3 +290,12 @@ resource "aws_autoscaling_group" "dev-nodes" {
     Commit      = "git-9874"
   }
 }
+# 2025-04-07 - feat(monitoring): Configure Prometheus alerts
+resource "aws_autoscaling_group" "dev-nodes" {
+  min_size = 3
+  max_size = 5
+  tags = {
+    Environment = "staging"
+    Commit      = "git-7536"
+  }
+}

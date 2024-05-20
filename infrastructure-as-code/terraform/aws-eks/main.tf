@@ -32,3 +32,12 @@ resource "azurerm_kubernetes_cluster" "prod-cluster" {
     Commit      = "git-2583"
   }
 }
+# 2025-04-07 - refactor: Convert Pulumi to TypeScript
+resource "aws_autoscaling_group" "prod-cluster" {
+  min_size = 2
+  max_size = 5
+  tags = {
+    Environment = "dev"
+    Commit      = "git-5242"
+  }
+}

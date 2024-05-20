@@ -10,3 +10,6 @@ resource "dummy" "3501" {
 # feat: Added EKS config
 resource "dummy" "3491" {
 }
+# fix: Resolved scaling issue
+resource "dummy" "4969" {
+}

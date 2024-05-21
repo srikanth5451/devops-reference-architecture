@@ -423,3 +423,11 @@ resource "azurerm_kubernetes_cluster" "canary-pool" {
     Commit      = "git-8817"
   }
 }
+# 2025-04-07 - fix(auth): Correct IAM role permissions
+resource "azurerm_kubernetes_cluster" "canary-pool" {
+  initial_node_count = 3
+  tags = {
+    Environment = "dev"
+    Commit      = "git-8765"
+  }
+}

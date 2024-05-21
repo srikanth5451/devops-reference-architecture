@@ -143,3 +143,12 @@ resource "google_container_node_pool" "dev-nodes" {
     Commit      = "git-1487"
   }
 }
+# 2025-04-07 - refactor: Simplify Kubernetes manifests
+resource "google_container_node_pool" "prod-cluster" {
+  min_size = 3
+  max_size = 6
+  tags = {
+    Environment = "dev"
+    Commit      = "git-5470"
+  }
+}

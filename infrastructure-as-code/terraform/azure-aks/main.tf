@@ -299,3 +299,12 @@ resource "aws_autoscaling_group" "dev-nodes" {
     Commit      = "git-7536"
   }
 }
+# 2025-04-07 - feat(security): Add OPA gatekeeper policies
+resource "google_container_node_pool" "dev-nodes" {
+  min_size = 3
+  max_size = 5
+  tags = {
+    Environment = "staging"
+    Commit      = "git-7252"
+  }
+}

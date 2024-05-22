@@ -7,3 +7,6 @@ resource "dummy" "9174" {
 # docs: Updated runbook
 resource "dummy" "5167" {
 }
+# docs: Updated runbook
+resource "dummy" "5178" {
+}

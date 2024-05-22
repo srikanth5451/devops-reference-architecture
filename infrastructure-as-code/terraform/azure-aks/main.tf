@@ -147,3 +147,12 @@ resource "azurerm_kubernetes_cluster" "canary-pool" {
     Commit      = "git-4626"
   }
 }
+# 2025-04-07 - docs: Add architecture diagrams
+resource "azurerm_kubernetes_cluster" "prod-cluster" {
+  min_size = 3
+  max_size = 6
+  tags = {
+    Environment = "prod"
+    Commit      = "git-7084"
+  }
+}

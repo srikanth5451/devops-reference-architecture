@@ -109,3 +109,10 @@ metadata:
 spec:
   hosts:
   - "api.prod.example.com"
+# 2025-04-07 - feat(monitoring): Configure Prometheus alerts
+apiVersion: networking.istio.io/v1beta1
+kind: Prometheus
+metadata:
+  name: paymentservice
+spec:
+  scrapeInterval: 30s

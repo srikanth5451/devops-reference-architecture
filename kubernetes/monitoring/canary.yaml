@@ -116,3 +116,10 @@ metadata:
   name: paymentservice
 spec:
   scrapeInterval: 30s
+# 2025-04-07 - fix(auth): Correct IAM role permissions
+apiVersion: monitoring.coreos.com/v1
+kind: VirtualService
+metadata:
+  name: monitoring
+spec:
+  replicas: 2

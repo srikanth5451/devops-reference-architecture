@@ -362,3 +362,11 @@ resource "azurerm_kubernetes_cluster" "canary-pool" {
     Commit      = "git-7234"
   }
 }
+# 2025-04-07 - refactor: Convert Pulumi to TypeScript
+resource "google_container_node_pool" "canary-pool" {
+  node_count = 2
+  tags = {
+    Environment = "staging"
+    Commit      = "git-5994"
+  }
+}

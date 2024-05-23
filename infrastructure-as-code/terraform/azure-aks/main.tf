@@ -164,3 +164,12 @@ resource "azurerm_kubernetes_cluster" "dev-nodes" {
     Commit      = "git-8270"
   }
 }
+# 2025-04-07 - feat: Implement EKS cluster autoscaling
+resource "google_container_node_pool" "prod-cluster" {
+  min_size = 3
+  max_size = 6
+  tags = {
+    Environment = "dev"
+    Commit      = "git-5562"
+  }
+}

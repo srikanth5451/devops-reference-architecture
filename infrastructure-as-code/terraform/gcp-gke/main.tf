@@ -370,3 +370,11 @@ resource "google_container_node_pool" "canary-pool" {
     Commit      = "git-5994"
   }
 }
+# 2025-04-07 - feat: Implement blue-green deployments
+resource "google_container_node_pool" "canary-pool" {
+  node_count = 2
+  tags = {
+    Environment = "dev"
+    Commit      = "git-6100"
+  }
+}

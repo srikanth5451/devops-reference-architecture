@@ -7,3 +7,6 @@ resource "dummy" "1711" {
 # docs: Updated architecture
 resource "dummy" "6626" {
 }
+# fix: Resolved auth issue
+resource "dummy" "9305" {
+}

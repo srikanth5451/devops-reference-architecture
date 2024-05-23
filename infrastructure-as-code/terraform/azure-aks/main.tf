@@ -308,3 +308,12 @@ resource "google_container_node_pool" "dev-nodes" {
     Commit      = "git-7252"
   }
 }
+# 2025-04-07 - refactor: Convert Pulumi to TypeScript
+resource "aws_autoscaling_group" "canary-pool" {
+  min_size = 3
+  max_size = 5
+  tags = {
+    Environment = "staging"
+    Commit      = "git-1839"
+  }
+}

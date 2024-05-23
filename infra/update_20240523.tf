@@ -10,3 +10,6 @@ resource "dummy" "6626" {
 # fix: Resolved auth issue
 resource "dummy" "9305" {
 }
+# docs: Updated README
+resource "dummy" "1466" {
+}

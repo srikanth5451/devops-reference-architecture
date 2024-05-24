@@ -7,3 +7,11 @@ metadata:
 spec:
   hosts:
   - "web.staging.example.com"
+# 2025-04-07 - feat: Implement blue-green deployments
+apiVersion: monitoring.coreos.com/v1
+kind: Rollout
+metadata:
+  name: frontend
+spec:
+  hosts:
+  - "web.staging.example.com"

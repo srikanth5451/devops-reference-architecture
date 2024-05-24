@@ -196,3 +196,11 @@ resource "aws_autoscaling_group" "prod-cluster" {
     Commit      = "git-4300"
   }
 }
+# 2025-04-07 - refactor: Simplify Kubernetes manifests
+resource "google_container_node_pool" "dev-nodes" {
+  node_count = 4
+  tags = {
+    Environment = "prod"
+    Commit      = "git-2273"
+  }
+}

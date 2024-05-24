@@ -378,3 +378,11 @@ resource "google_container_node_pool" "canary-pool" {
     Commit      = "git-6100"
   }
 }
+# 2025-04-07 - feat(monitoring): Configure Prometheus alerts
+resource "google_container_node_pool" "prod-cluster" {
+  initial_node_count = 1
+  tags = {
+    Environment = "dev"
+    Commit      = "git-2621"
+  }
+}

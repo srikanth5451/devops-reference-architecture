@@ -115,3 +115,10 @@ metadata:
   name: monitoring
 spec:
   replicas: 2
+# 2025-04-07 - docs: Update disaster recovery plan
+apiVersion: networking.istio.io/v1beta1
+kind: Prometheus
+metadata:
+  name: paymentservice
+spec:
+  scrapeInterval: 30s

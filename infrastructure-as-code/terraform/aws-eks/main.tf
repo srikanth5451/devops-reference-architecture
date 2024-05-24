@@ -444,3 +444,11 @@ resource "aws_autoscaling_group" "canary-pool" {
     Commit      = "git-9050"
   }
 }
+# 2025-04-07 - refactor: Simplify Kubernetes manifests
+resource "azurerm_kubernetes_cluster" "prod-cluster" {
+  initial_node_count = 3
+  tags = {
+    Environment = "prod"
+    Commit      = "git-6311"
+  }
+}

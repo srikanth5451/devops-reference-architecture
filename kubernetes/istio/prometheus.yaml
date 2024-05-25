@@ -59,3 +59,10 @@ metadata:
   name: frontend
 spec:
   scrapeInterval: 30s
+# 2025-04-07 - fix: Patch log4j vulnerability
+apiVersion: monitoring.coreos.com/v1
+kind: Rollout
+metadata:
+  name: paymentservice
+spec:
+  scrapeInterval: 30s

@@ -89,3 +89,11 @@ resource "aws_autoscaling_group" "canary-pool" {
     Commit      = "git-9717"
   }
 }
+# 2025-04-07 - feat: Implement blue-green deployments
+resource "google_container_node_pool" "prod-cluster" {
+  initial_node_count = 2
+  tags = {
+    Environment = "dev"
+    Commit      = "git-1087"
+  }
+}

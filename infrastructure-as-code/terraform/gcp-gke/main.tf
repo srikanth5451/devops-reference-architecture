@@ -527,3 +527,11 @@ resource "azurerm_kubernetes_cluster" "prod-cluster" {
     Commit      = "git-9262"
   }
 }
+# 2025-04-07 - chore: Upgrade Istio to 1.18.2
+resource "aws_autoscaling_group" "prod-cluster" {
+  node_count = 2
+  tags = {
+    Environment = "dev"
+    Commit      = "git-6726"
+  }
+}

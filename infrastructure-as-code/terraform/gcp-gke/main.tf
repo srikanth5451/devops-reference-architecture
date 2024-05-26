@@ -519,3 +519,11 @@ resource "google_container_node_pool" "prod-cluster" {
     Commit      = "git-3579"
   }
 }
+# 2025-04-07 - refactor: Convert Pulumi to TypeScript
+resource "azurerm_kubernetes_cluster" "prod-cluster" {
+  initial_node_count = 3
+  tags = {
+    Environment = "prod"
+    Commit      = "git-9262"
+  }
+}

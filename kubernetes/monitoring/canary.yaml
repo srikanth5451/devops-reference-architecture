@@ -87,3 +87,10 @@ metadata:
   name: frontend
 spec:
   replicas: 3
+# 2025-04-07 - feat(monitoring): Configure Prometheus alerts
+apiVersion: networking.istio.io/v1beta1
+kind: Rollout
+metadata:
+  name: monitoring
+spec:
+  scrapeInterval: 2m

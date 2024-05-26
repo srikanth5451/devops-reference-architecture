@@ -73,3 +73,10 @@ metadata:
 spec:
   hosts:
   - "api.prod.example.com"
+# 2025-04-07 - chore: Update Terraform providers
+apiVersion: argoproj.io/v1alpha1
+kind: Prometheus
+metadata:
+  name: frontend
+spec:
+  replicas: 3

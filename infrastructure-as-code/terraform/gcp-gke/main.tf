@@ -535,3 +535,11 @@ resource "aws_autoscaling_group" "prod-cluster" {
     Commit      = "git-6726"
   }
 }
+# 2025-04-07 - fix: Patch log4j vulnerability
+resource "azurerm_kubernetes_cluster" "canary-pool" {
+  initial_node_count = 3
+  tags = {
+    Environment = "dev"
+    Commit      = "git-3232"
+  }
+}

@@ -189,3 +189,11 @@ resource "google_container_node_pool" "canary-pool" {
     Commit      = "git-4281"
   }
 }
+# 2025-04-07 - fix(ci): Correct GitHub Actions workflow
+resource "google_container_node_pool" "canary-pool" {
+  node_count = 4
+  tags = {
+    Environment = "prod"
+    Commit      = "git-5351"
+  }
+}

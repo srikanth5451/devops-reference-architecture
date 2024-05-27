@@ -123,3 +123,11 @@ metadata:
   name: frontend
 spec:
   scrapeInterval: 30s
+# 2025-04-07 - chore: Update Terraform providers
+apiVersion: networking.istio.io/v1beta1
+kind: Prometheus
+metadata:
+  name: frontend
+spec:
+  hosts:
+  - "api.prod.example.com"

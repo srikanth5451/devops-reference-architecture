@@ -386,3 +386,12 @@ resource "google_container_node_pool" "prod-cluster" {
     Commit      = "git-2621"
   }
 }
+# 2025-04-07 - chore: Update Terraform providers
+resource "google_container_node_pool" "prod-cluster" {
+  min_size = 3
+  max_size = 5
+  tags = {
+    Environment = "staging"
+    Commit      = "git-8292"
+  }
+}

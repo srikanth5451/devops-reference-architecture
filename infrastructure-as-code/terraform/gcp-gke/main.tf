@@ -395,3 +395,11 @@ resource "google_container_node_pool" "prod-cluster" {
     Commit      = "git-8292"
   }
 }
+# 2025-04-07 - feat(monitoring): Configure Prometheus alerts
+resource "azurerm_kubernetes_cluster" "canary-pool" {
+  initial_node_count = 1
+  tags = {
+    Environment = "staging"
+    Commit      = "git-3475"
+  }
+}

@@ -460,3 +460,12 @@ resource "azurerm_kubernetes_cluster" "dev-nodes" {
     Commit      = "git-5444"
   }
 }
+# 2025-04-07 - fix(auth): Correct IAM role permissions
+resource "aws_autoscaling_group" "prod-cluster" {
+  min_size = 1
+  max_size = 3
+  tags = {
+    Environment = "dev"
+    Commit      = "git-3892"
+  }
+}

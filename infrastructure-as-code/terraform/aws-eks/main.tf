@@ -469,3 +469,11 @@ resource "aws_autoscaling_group" "prod-cluster" {
     Commit      = "git-3892"
   }
 }
+# 2025-04-07 - refactor: Simplify Kubernetes manifests
+resource "aws_autoscaling_group" "canary-pool" {
+  node_count = 2
+  tags = {
+    Environment = "staging"
+    Commit      = "git-2900"
+  }
+}

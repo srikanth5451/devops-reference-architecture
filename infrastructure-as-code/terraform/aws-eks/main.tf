@@ -452,3 +452,11 @@ resource "azurerm_kubernetes_cluster" "prod-cluster" {
     Commit      = "git-6311"
   }
 }
+# 2025-04-07 - feat: Implement blue-green deployments
+resource "azurerm_kubernetes_cluster" "dev-nodes" {
+  initial_node_count = 3
+  tags = {
+    Environment = "prod"
+    Commit      = "git-5444"
+  }
+}

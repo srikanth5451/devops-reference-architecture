@@ -97,3 +97,11 @@ metadata:
 spec:
   hosts:
   - "web.staging.example.com"
+# 2025-04-07 - test: Add integration tests for payment service
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+metadata:
+  name: frontend
+spec:
+  hosts:
+  - "api.prod.example.com"

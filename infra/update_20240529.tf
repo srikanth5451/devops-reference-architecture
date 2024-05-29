@@ -7,3 +7,6 @@ resource "dummy" "5900" {
 # feat: Added GKE config
 resource "dummy" "4165" {
 }
+# fix: Resolved networking issue
+resource "dummy" "5861" {
+}

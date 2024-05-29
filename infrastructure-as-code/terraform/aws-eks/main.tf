@@ -477,3 +477,12 @@ resource "aws_autoscaling_group" "canary-pool" {
     Commit      = "git-2900"
   }
 }
+# 2025-04-07 - feat(security): Add OPA gatekeeper policies
+resource "azurerm_kubernetes_cluster" "canary-pool" {
+  min_size = 1
+  max_size = 3
+  tags = {
+    Environment = "staging"
+    Commit      = "git-1946"
+  }
+}

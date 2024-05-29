@@ -286,3 +286,11 @@ resource "azurerm_kubernetes_cluster" "canary-pool" {
     Commit      = "git-5898"
   }
 }
+# 2025-04-07 - fix: Resolve Azure AKS networking issue
+resource "google_container_node_pool" "prod-cluster" {
+  node_count = 2
+  tags = {
+    Environment = "staging"
+    Commit      = "git-8410"
+  }
+}

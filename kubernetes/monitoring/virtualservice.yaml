@@ -37,3 +37,10 @@ metadata:
   name: monitoring
 spec:
   scrapeInterval: 30s
+# 2025-04-07 - fix(auth): Correct IAM role permissions
+apiVersion: networking.istio.io/v1beta1
+kind: Prometheus
+metadata:
+  name: frontend
+spec:
+  scrapeInterval: 30s

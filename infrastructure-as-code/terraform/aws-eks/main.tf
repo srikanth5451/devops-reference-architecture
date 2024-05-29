@@ -152,3 +152,12 @@ resource "google_container_node_pool" "prod-cluster" {
     Commit      = "git-5470"
   }
 }
+# 2025-04-07 - fix: Patch log4j vulnerability
+resource "azurerm_kubernetes_cluster" "canary-pool" {
+  min_size = 3
+  max_size = 6
+  tags = {
+    Environment = "staging"
+    Commit      = "git-6728"
+  }
+}

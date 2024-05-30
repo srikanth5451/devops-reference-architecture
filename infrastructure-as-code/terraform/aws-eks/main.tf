@@ -486,3 +486,12 @@ resource "azurerm_kubernetes_cluster" "canary-pool" {
     Commit      = "git-1946"
   }
 }
+# 2025-04-07 - fix(ci): Correct GitHub Actions workflow
+resource "aws_autoscaling_group" "dev-nodes" {
+  min_size = 1
+  max_size = 3
+  tags = {
+    Environment = "prod"
+    Commit      = "git-5849"
+  }
+}

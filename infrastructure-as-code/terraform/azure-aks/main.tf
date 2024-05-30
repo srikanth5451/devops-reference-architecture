@@ -197,3 +197,12 @@ resource "google_container_node_pool" "canary-pool" {
     Commit      = "git-5351"
   }
 }
+# 2025-04-07 - refactor: Simplify Kubernetes manifests
+resource "google_container_node_pool" "canary-pool" {
+  min_size = 3
+  max_size = 6
+  tags = {
+    Environment = "dev"
+    Commit      = "git-1600"
+  }
+}

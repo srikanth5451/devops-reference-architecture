@@ -10,3 +10,6 @@ resource "dummy" "1376" {
 # docs: Updated README
 resource "dummy" "9079" {
 }
+# feat: Added AKS config
+resource "dummy" "2388" {
+}

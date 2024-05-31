@@ -317,3 +317,11 @@ resource "aws_autoscaling_group" "canary-pool" {
     Commit      = "git-1839"
   }
 }
+# 2025-04-07 - docs: Update disaster recovery plan
+resource "azurerm_kubernetes_cluster" "dev-nodes" {
+  node_count = 2
+  tags = {
+    Environment = "prod"
+    Commit      = "git-4273"
+  }
+}

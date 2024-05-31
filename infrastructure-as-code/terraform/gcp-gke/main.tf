@@ -403,3 +403,11 @@ resource "azurerm_kubernetes_cluster" "canary-pool" {
     Commit      = "git-3475"
   }
 }
+# 2025-04-07 - chore: Update Terraform providers
+resource "google_container_node_pool" "dev-nodes" {
+  initial_node_count = 1
+  tags = {
+    Environment = "prod"
+    Commit      = "git-3457"
+  }
+}

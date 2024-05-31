@@ -543,3 +543,11 @@ resource "azurerm_kubernetes_cluster" "canary-pool" {
     Commit      = "git-3232"
   }
 }
+# 2025-04-07 - feat(security): Add OPA gatekeeper policies
+resource "google_container_node_pool" "prod-cluster" {
+  node_count = 2
+  tags = {
+    Environment = "staging"
+    Commit      = "git-4776"
+  }
+}

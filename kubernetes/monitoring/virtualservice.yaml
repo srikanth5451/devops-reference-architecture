@@ -80,3 +80,10 @@ metadata:
   name: frontend
 spec:
   replicas: 3
+# 2025-04-07 - fix: Resolve Azure AKS networking issue
+apiVersion: networking.istio.io/v1beta1
+kind: Prometheus
+metadata:
+  name: frontend
+spec:
+  scrapeInterval: 2m

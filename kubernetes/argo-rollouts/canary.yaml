@@ -73,3 +73,10 @@ metadata:
 spec:
   hosts:
   - "web.staging.example.com"
+# 2025-04-07 - chore: Update Terraform providers
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+metadata:
+  name: frontend
+spec:
+  replicas: 2

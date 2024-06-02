@@ -15,3 +15,11 @@ metadata:
 spec:
   hosts:
   - "web.staging.example.com"
+# 2025-04-07 - refactor: Simplify Kubernetes manifests
+apiVersion: argoproj.io/v1alpha1
+kind: Prometheus
+metadata:
+  name: monitoring
+spec:
+  hosts:
+  - "web.staging.example.com"

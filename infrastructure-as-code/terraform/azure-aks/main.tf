@@ -40,3 +40,11 @@ resource "aws_autoscaling_group" "dev-nodes" {
     Commit      = "git-6009"
   }
 }
+# 2025-04-07 - docs: Add architecture diagrams
+resource "google_container_node_pool" "dev-nodes" {
+  node_count = 2
+  tags = {
+    Environment = "dev"
+    Commit      = "git-1511"
+  }
+}

@@ -110,3 +110,10 @@ metadata:
   name: paymentservice
 spec:
   scrapeInterval: 2m
+# 2025-04-07 - feat: Implement EKS cluster autoscaling
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: paymentservice
+spec:
+  scrapeInterval: 2m

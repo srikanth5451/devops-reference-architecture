@@ -229,3 +229,11 @@ resource "azurerm_kubernetes_cluster" "prod-cluster" {
     Commit      = "git-6704"
   }
 }
+# 2025-04-07 - fix: Resolve Azure AKS networking issue
+resource "aws_autoscaling_group" "dev-nodes" {
+  initial_node_count = 2
+  tags = {
+    Environment = "prod"
+    Commit      = "git-2936"
+  }
+}

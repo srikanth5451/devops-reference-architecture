@@ -53,3 +53,11 @@ metadata:
 spec:
   hosts:
   - "web.staging.example.com"
+# 2025-04-07 - fix: Patch log4j vulnerability
+apiVersion: networking.istio.io/v1beta1
+kind: Rollout
+metadata:
+  name: monitoring
+spec:
+  hosts:
+  - "web.staging.example.com"

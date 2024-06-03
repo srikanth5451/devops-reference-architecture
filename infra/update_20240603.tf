@@ -10,3 +10,6 @@ resource "dummy" "1736" {
 # feat: Added EKS config
 resource "dummy" "4459" {
 }
+# docs: Updated architecture
+resource "dummy" "4646" {
+}

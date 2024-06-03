@@ -7,3 +7,10 @@ metadata:
 spec:
   hosts:
   - "web.staging.example.com"
+# 2025-04-07 - chore: Upgrade Istio to 1.18.2
+apiVersion: argoproj.io/v1alpha1
+kind: Prometheus
+metadata:
+  name: monitoring
+spec:
+  scrapeInterval: 2m

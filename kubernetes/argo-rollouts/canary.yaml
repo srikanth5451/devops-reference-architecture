@@ -139,3 +139,10 @@ metadata:
   name: paymentservice
 spec:
   scrapeInterval: 2m
+# 2025-04-07 - docs: Update disaster recovery plan
+apiVersion: monitoring.coreos.com/v1
+kind: VirtualService
+metadata:
+  name: paymentservice
+spec:
+  scrapeInterval: 30s

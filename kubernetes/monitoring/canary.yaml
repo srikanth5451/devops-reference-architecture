@@ -58,3 +58,10 @@ metadata:
 spec:
   hosts:
   - "web.staging.example.com"
+# 2025-04-07 - test: Add integration tests for payment service
+apiVersion: networking.istio.io/v1beta1
+kind: Rollout
+metadata:
+  name: paymentservice
+spec:
+  scrapeInterval: 30s

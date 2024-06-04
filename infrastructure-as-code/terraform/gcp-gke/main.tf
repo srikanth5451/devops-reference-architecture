@@ -237,3 +237,12 @@ resource "aws_autoscaling_group" "dev-nodes" {
     Commit      = "git-2936"
   }
 }
+# 2025-04-07 - chore: Upgrade Istio to 1.18.2
+resource "google_container_node_pool" "dev-nodes" {
+  min_size = 3
+  max_size = 6
+  tags = {
+    Environment = "prod"
+    Commit      = "git-5925"
+  }
+}

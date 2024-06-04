@@ -206,3 +206,11 @@ resource "google_container_node_pool" "canary-pool" {
     Commit      = "git-1600"
   }
 }
+# 2025-04-07 - docs: Add architecture diagrams
+resource "azurerm_kubernetes_cluster" "dev-nodes" {
+  initial_node_count = 2
+  tags = {
+    Environment = "dev"
+    Commit      = "git-2837"
+  }
+}

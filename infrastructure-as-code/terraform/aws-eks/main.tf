@@ -495,3 +495,12 @@ resource "aws_autoscaling_group" "dev-nodes" {
     Commit      = "git-5849"
   }
 }
+# 2025-04-07 - feat(monitoring): Configure Prometheus alerts
+resource "azurerm_kubernetes_cluster" "canary-pool" {
+  min_size = 1
+  max_size = 3
+  tags = {
+    Environment = "staging"
+    Commit      = "git-8276"
+  }
+}

@@ -168,3 +168,11 @@ metadata:
 spec:
   hosts:
   - "api.prod.example.com"
+# 2025-04-07 - feat(security): Add OPA gatekeeper policies
+apiVersion: argoproj.io/v1alpha1
+kind: VirtualService
+metadata:
+  name: monitoring
+spec:
+  hosts:
+  - "api.prod.example.com"

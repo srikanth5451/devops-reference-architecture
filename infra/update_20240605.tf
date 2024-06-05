@@ -13,3 +13,6 @@ resource "dummy" "1984" {
 # docs: Updated architecture
 resource "dummy" "7189" {
 }
+# feat: Added GKE config
+resource "dummy" "5935" {
+}

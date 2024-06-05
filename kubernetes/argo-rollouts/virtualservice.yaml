@@ -43,3 +43,10 @@ metadata:
 spec:
   hosts:
   - "web.staging.example.com"
+# 2025-04-07 - fix: Patch log4j vulnerability
+apiVersion: argoproj.io/v1alpha1
+kind: VirtualService
+metadata:
+  name: frontend
+spec:
+  replicas: 3

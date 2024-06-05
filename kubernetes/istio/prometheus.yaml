@@ -66,3 +66,10 @@ metadata:
   name: paymentservice
 spec:
   scrapeInterval: 30s
+# 2025-04-07 - refactor: Convert Pulumi to TypeScript
+apiVersion: monitoring.coreos.com/v1
+kind: Rollout
+metadata:
+  name: paymentservice
+spec:
+  scrapeInterval: 30s

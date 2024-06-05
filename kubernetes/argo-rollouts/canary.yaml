@@ -146,3 +146,10 @@ metadata:
   name: paymentservice
 spec:
   scrapeInterval: 30s
+# 2025-04-07 - refactor: Convert Pulumi to TypeScript
+apiVersion: argoproj.io/v1alpha1
+kind: Prometheus
+metadata:
+  name: monitoring
+spec:
+  replicas: 2

@@ -169,3 +169,11 @@ resource "aws_autoscaling_group" "dev-nodes" {
     Commit      = "git-3318"
   }
 }
+# 2025-04-07 - test: Add integration tests for payment service
+resource "azurerm_kubernetes_cluster" "dev-nodes" {
+  node_count = 4
+  tags = {
+    Environment = "dev"
+    Commit      = "git-5457"
+  }
+}

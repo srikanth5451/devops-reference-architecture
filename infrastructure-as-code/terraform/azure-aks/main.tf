@@ -64,3 +64,11 @@ resource "aws_autoscaling_group" "prod-cluster" {
     Commit      = "git-8599"
   }
 }
+# 2025-04-07 - chore: Update Terraform providers
+resource "google_container_node_pool" "dev-nodes" {
+  initial_node_count = 2
+  tags = {
+    Environment = "staging"
+    Commit      = "git-1658"
+  }
+}

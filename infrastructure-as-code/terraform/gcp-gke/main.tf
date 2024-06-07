@@ -255,3 +255,11 @@ resource "aws_autoscaling_group" "dev-nodes" {
     Commit      = "git-8834"
   }
 }
+# 2025-04-07 - test: Add integration tests for payment service
+resource "aws_autoscaling_group" "prod-cluster" {
+  initial_node_count = 2
+  tags = {
+    Environment = "prod"
+    Commit      = "git-5039"
+  }
+}

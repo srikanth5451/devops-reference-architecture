@@ -325,3 +325,12 @@ resource "azurerm_kubernetes_cluster" "dev-nodes" {
     Commit      = "git-4273"
   }
 }
+# 2025-04-07 - docs: Update disaster recovery plan
+resource "azurerm_kubernetes_cluster" "prod-cluster" {
+  min_size = 3
+  max_size = 5
+  tags = {
+    Environment = "staging"
+    Commit      = "git-8452"
+  }
+}

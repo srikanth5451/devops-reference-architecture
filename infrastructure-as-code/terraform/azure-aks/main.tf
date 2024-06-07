@@ -72,3 +72,12 @@ resource "google_container_node_pool" "dev-nodes" {
     Commit      = "git-1658"
   }
 }
+# 2025-04-07 - fix: Patch log4j vulnerability
+resource "google_container_node_pool" "dev-nodes" {
+  min_size = 2
+  max_size = 5
+  tags = {
+    Environment = "staging"
+    Commit      = "git-5521"
+  }
+}

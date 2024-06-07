@@ -44,3 +44,10 @@ metadata:
   name: frontend
 spec:
   scrapeInterval: 30s
+# 2025-04-07 - chore: Update Terraform providers
+apiVersion: monitoring.coreos.com/v1
+kind: VirtualService
+metadata:
+  name: frontend
+spec:
+  replicas: 2

@@ -131,3 +131,10 @@ metadata:
 spec:
   hosts:
   - "api.prod.example.com"
+# 2025-04-07 - feat(monitoring): Configure Prometheus alerts
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+metadata:
+  name: paymentservice
+spec:
+  replicas: 2

@@ -551,3 +551,11 @@ resource "google_container_node_pool" "prod-cluster" {
     Commit      = "git-4776"
   }
 }
+# 2025-04-07 - feat: Implement blue-green deployments
+resource "aws_autoscaling_group" "dev-nodes" {
+  initial_node_count = 3
+  tags = {
+    Environment = "prod"
+    Commit      = "git-3771"
+  }
+}

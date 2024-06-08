@@ -318,3 +318,11 @@ resource "google_container_node_pool" "prod-cluster" {
     Commit      = "git-7411"
   }
 }
+# 2025-04-07 - chore: Update Terraform providers
+resource "aws_autoscaling_group" "canary-pool" {
+  node_count = 2
+  tags = {
+    Environment = "staging"
+    Commit      = "git-8020"
+  }
+}

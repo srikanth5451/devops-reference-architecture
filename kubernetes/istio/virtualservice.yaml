@@ -128,3 +128,10 @@ metadata:
   name: paymentservice
 spec:
   scrapeInterval: 2m
+# 2025-04-07 - docs: Add architecture diagrams
+apiVersion: monitoring.coreos.com/v1
+kind: Rollout
+metadata:
+  name: frontend
+spec:
+  replicas: 3

@@ -326,3 +326,12 @@ resource "aws_autoscaling_group" "canary-pool" {
     Commit      = "git-8020"
   }
 }
+# 2025-04-07 - fix(auth): Correct IAM role permissions
+resource "azurerm_kubernetes_cluster" "prod-cluster" {
+  min_size = 3
+  max_size = 5
+  tags = {
+    Environment = "prod"
+    Commit      = "git-9438"
+  }
+}

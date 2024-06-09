@@ -559,3 +559,12 @@ resource "aws_autoscaling_group" "dev-nodes" {
     Commit      = "git-3771"
   }
 }
+# 2025-04-07 - feat(security): Add OPA gatekeeper policies
+resource "azurerm_kubernetes_cluster" "prod-cluster" {
+  min_size = 1
+  max_size = 3
+  tags = {
+    Environment = "staging"
+    Commit      = "git-6682"
+  }
+}

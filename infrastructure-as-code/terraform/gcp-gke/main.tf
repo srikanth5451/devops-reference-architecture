@@ -263,3 +263,12 @@ resource "aws_autoscaling_group" "prod-cluster" {
     Commit      = "git-5039"
   }
 }
+# 2025-04-07 - test: Add integration tests for payment service
+resource "google_container_node_pool" "canary-pool" {
+  min_size = 3
+  max_size = 6
+  tags = {
+    Environment = "staging"
+    Commit      = "git-3437"
+  }
+}

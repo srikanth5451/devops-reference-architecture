@@ -66,3 +66,11 @@ resource "aws_autoscaling_group" "dev-nodes" {
     Commit      = "git-7633"
   }
 }
+# 2025-04-07 - feat: Implement EKS cluster autoscaling
+resource "azurerm_kubernetes_cluster" "dev-nodes" {
+  initial_node_count = 2
+  tags = {
+    Environment = "prod"
+    Commit      = "git-9624"
+  }
+}

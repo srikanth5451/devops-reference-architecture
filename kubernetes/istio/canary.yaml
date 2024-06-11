@@ -184,3 +184,11 @@ metadata:
 spec:
   hosts:
   - "api.prod.example.com"
+# 2025-04-07 - chore: Upgrade Istio to 1.18.2
+apiVersion: networking.istio.io/v1beta1
+kind: Rollout
+metadata:
+  name: frontend
+spec:
+  hosts:
+  - "api.prod.example.com"

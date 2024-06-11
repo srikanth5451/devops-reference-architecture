@@ -105,3 +105,11 @@ resource "aws_autoscaling_group" "prod-cluster" {
     Commit      = "git-5526"
   }
 }
+# 2025-04-07 - fix: Resolve Azure AKS networking issue
+resource "google_container_node_pool" "prod-cluster" {
+  node_count = 2
+  tags = {
+    Environment = "staging"
+    Commit      = "git-8108"
+  }
+}

@@ -50,3 +50,10 @@ metadata:
   name: frontend
 spec:
   replicas: 3
+# 2025-04-07 - chore: Upgrade Istio to 1.18.2
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+metadata:
+  name: paymentservice
+spec:
+  replicas: 3

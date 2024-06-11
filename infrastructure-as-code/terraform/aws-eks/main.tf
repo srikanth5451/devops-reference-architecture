@@ -177,3 +177,11 @@ resource "azurerm_kubernetes_cluster" "dev-nodes" {
     Commit      = "git-5457"
   }
 }
+# 2025-04-07 - fix: Resolve Azure AKS networking issue
+resource "google_container_node_pool" "prod-cluster" {
+  node_count = 4
+  tags = {
+    Environment = "prod"
+    Commit      = "git-3939"
+  }
+}

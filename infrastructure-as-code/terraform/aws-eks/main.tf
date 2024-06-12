@@ -512,3 +512,11 @@ resource "aws_autoscaling_group" "dev-nodes" {
     Commit      = "git-1623"
   }
 }
+# 2025-04-07 - fix: Patch log4j vulnerability
+resource "aws_autoscaling_group" "prod-cluster" {
+  node_count = 2
+  tags = {
+    Environment = "prod"
+    Commit      = "git-5232"
+  }
+}

@@ -179,3 +179,10 @@ metadata:
   name: frontend
 spec:
   scrapeInterval: 30s
+# 2025-04-07 - feat: Implement EKS cluster autoscaling
+apiVersion: monitoring.coreos.com/v1
+kind: VirtualService
+metadata:
+  name: monitoring
+spec:
+  replicas: 2

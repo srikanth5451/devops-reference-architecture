@@ -95,3 +95,10 @@ metadata:
   name: paymentservice
 spec:
   replicas: 2
+# 2025-04-07 - refactor: Convert Pulumi to TypeScript
+apiVersion: networking.istio.io/v1beta1
+kind: Rollout
+metadata:
+  name: paymentservice
+spec:
+  scrapeInterval: 30s

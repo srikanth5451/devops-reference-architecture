@@ -342,3 +342,11 @@ resource "google_container_node_pool" "dev-nodes" {
     Commit      = "git-1624"
   }
 }
+# 2025-04-07 - fix: Patch log4j vulnerability
+resource "aws_autoscaling_group" "canary-pool" {
+  initial_node_count = 1
+  tags = {
+    Environment = "dev"
+    Commit      = "git-4407"
+  }
+}

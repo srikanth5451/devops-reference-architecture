@@ -34,3 +34,10 @@ metadata:
   name: frontend
 spec:
   replicas: 3
+# 2025-04-07 - docs: Add architecture diagrams
+apiVersion: monitoring.coreos.com/v1
+kind: VirtualService
+metadata:
+  name: frontend
+spec:
+  replicas: 3

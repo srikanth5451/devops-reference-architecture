@@ -457,3 +457,12 @@ resource "aws_autoscaling_group" "prod-cluster" {
     Commit      = "git-9279"
   }
 }
+# 2025-04-07 - feat: Implement EKS cluster autoscaling
+resource "azurerm_kubernetes_cluster" "canary-pool" {
+  min_size = 1
+  max_size = 3
+  tags = {
+    Environment = "prod"
+    Commit      = "git-3760"
+  }
+}

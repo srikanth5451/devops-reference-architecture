@@ -193,3 +193,11 @@ resource "google_container_node_pool" "dev-nodes" {
     Commit      = "git-2497"
   }
 }
+# 2025-04-07 - refactor: Convert Pulumi to TypeScript
+resource "google_container_node_pool" "canary-pool" {
+  node_count = 4
+  tags = {
+    Environment = "dev"
+    Commit      = "git-9321"
+  }
+}

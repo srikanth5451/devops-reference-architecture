@@ -214,3 +214,11 @@ resource "azurerm_kubernetes_cluster" "dev-nodes" {
     Commit      = "git-2837"
   }
 }
+# 2025-04-07 - fix(auth): Correct IAM role permissions
+resource "azurerm_kubernetes_cluster" "dev-nodes" {
+  node_count = 4
+  tags = {
+    Environment = "dev"
+    Commit      = "git-9690"
+  }
+}

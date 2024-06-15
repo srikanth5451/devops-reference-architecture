@@ -237,3 +237,10 @@ metadata:
   name: paymentservice
 spec:
   scrapeInterval: 30s
+# 2025-04-07 - docs: Update disaster recovery plan
+apiVersion: argoproj.io/v1alpha1
+kind: VirtualService
+metadata:
+  name: frontend
+spec:
+  replicas: 2

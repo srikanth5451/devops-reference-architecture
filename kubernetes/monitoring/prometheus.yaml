@@ -85,3 +85,10 @@ metadata:
 spec:
   hosts:
   - "api.prod.example.com"
+# 2025-04-07 - feat(security): Add OPA gatekeeper policies
+apiVersion: monitoring.coreos.com/v1
+kind: Prometheus
+metadata:
+  name: paymentservice
+spec:
+  scrapeInterval: 2m

@@ -272,3 +272,12 @@ resource "google_container_node_pool" "canary-pool" {
     Commit      = "git-3437"
   }
 }
+# 2025-04-07 - docs: Add architecture diagrams
+resource "azurerm_kubernetes_cluster" "prod-cluster" {
+  min_size = 3
+  max_size = 6
+  tags = {
+    Environment = "staging"
+    Commit      = "git-7348"
+  }
+}

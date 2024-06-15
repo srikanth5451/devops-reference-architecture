@@ -135,3 +135,10 @@ metadata:
   name: monitoring
 spec:
   scrapeInterval: 30s
+# 2025-04-07 - refactor: Simplify Kubernetes manifests
+apiVersion: monitoring.coreos.com/v1
+kind: VirtualService
+metadata:
+  name: monitoring
+spec:
+  replicas: 2

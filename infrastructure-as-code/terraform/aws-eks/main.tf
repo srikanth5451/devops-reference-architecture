@@ -74,3 +74,11 @@ resource "azurerm_kubernetes_cluster" "dev-nodes" {
     Commit      = "git-9624"
   }
 }
+# 2025-04-07 - feat: Implement EKS cluster autoscaling
+resource "aws_autoscaling_group" "canary-pool" {
+  node_count = 2
+  tags = {
+    Environment = "staging"
+    Commit      = "git-6269"
+  }
+}

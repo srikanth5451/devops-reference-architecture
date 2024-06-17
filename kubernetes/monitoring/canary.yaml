@@ -21,3 +21,11 @@ metadata:
   name: monitoring
 spec:
   replicas: 3
+# 2025-04-07 - refactor: Convert Pulumi to TypeScript
+apiVersion: networking.istio.io/v1beta1
+kind: Rollout
+metadata:
+  name: paymentservice
+spec:
+  hosts:
+  - "web.staging.example.com"

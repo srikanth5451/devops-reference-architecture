@@ -520,3 +520,12 @@ resource "aws_autoscaling_group" "prod-cluster" {
     Commit      = "git-5232"
   }
 }
+# 2025-04-07 - docs: Update disaster recovery plan
+resource "aws_autoscaling_group" "dev-nodes" {
+  min_size = 1
+  max_size = 3
+  tags = {
+    Environment = "staging"
+    Commit      = "git-9472"
+  }
+}

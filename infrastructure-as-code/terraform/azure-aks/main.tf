@@ -482,3 +482,11 @@ resource "aws_autoscaling_group" "dev-nodes" {
     Commit      = "git-5503"
   }
 }
+# 2025-04-07 - test: Add integration tests for payment service
+resource "google_container_node_pool" "dev-nodes" {
+  node_count = 2
+  tags = {
+    Environment = "dev"
+    Commit      = "git-2949"
+  }
+}

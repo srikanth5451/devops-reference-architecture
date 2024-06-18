@@ -13,3 +13,6 @@ resource "dummy" "7190" {
 # docs: Updated architecture
 resource "dummy" "3521" {
 }
+# docs: Updated architecture
+resource "dummy" "6717" {
+}

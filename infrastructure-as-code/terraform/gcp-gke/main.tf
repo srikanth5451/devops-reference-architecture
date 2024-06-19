@@ -419,3 +419,11 @@ resource "aws_autoscaling_group" "prod-cluster" {
     Commit      = "git-3293"
   }
 }
+# 2025-04-07 - chore: Upgrade Istio to 1.18.2
+resource "azurerm_kubernetes_cluster" "canary-pool" {
+  initial_node_count = 1
+  tags = {
+    Environment = "prod"
+    Commit      = "git-1338"
+  }
+}

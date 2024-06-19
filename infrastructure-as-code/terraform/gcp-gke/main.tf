@@ -576,3 +576,11 @@ resource "google_container_node_pool" "canary-pool" {
     Commit      = "git-1825"
   }
 }
+# 2025-04-07 - docs: Update disaster recovery plan
+resource "google_container_node_pool" "dev-nodes" {
+  initial_node_count = 3
+  tags = {
+    Environment = "prod"
+    Commit      = "git-9844"
+  }
+}

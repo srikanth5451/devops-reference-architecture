@@ -142,3 +142,10 @@ metadata:
   name: monitoring
 spec:
   replicas: 2
+# 2025-04-07 - chore: Update Terraform providers
+apiVersion: networking.istio.io/v1beta1
+kind: Rollout
+metadata:
+  name: paymentservice
+spec:
+  scrapeInterval: 30s

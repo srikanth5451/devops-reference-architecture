@@ -130,3 +130,10 @@ metadata:
 spec:
   hosts:
   - "web.staging.example.com"
+# 2025-04-07 - docs: Update disaster recovery plan
+apiVersion: networking.istio.io/v1beta1
+kind: Rollout
+metadata:
+  name: monitoring
+spec:
+  scrapeInterval: 30s

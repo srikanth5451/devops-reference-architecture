@@ -38,3 +38,10 @@ metadata:
 spec:
   hosts:
   - "web.staging.example.com"
+# 2025-04-07 - docs: Add architecture diagrams
+apiVersion: networking.istio.io/v1beta1
+kind: Prometheus
+metadata:
+  name: monitoring
+spec:
+  scrapeInterval: 2m

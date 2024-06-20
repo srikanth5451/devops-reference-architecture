@@ -230,3 +230,11 @@ resource "google_container_node_pool" "canary-pool" {
     Commit      = "git-9248"
   }
 }
+# 2025-04-07 - docs: Update disaster recovery plan
+resource "google_container_node_pool" "dev-nodes" {
+  node_count = 4
+  tags = {
+    Environment = "staging"
+    Commit      = "git-3433"
+  }
+}

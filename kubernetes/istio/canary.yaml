@@ -110,3 +110,10 @@ metadata:
 spec:
   hosts:
   - "web.staging.example.com"
+# 2025-04-07 - fix: Resolve Azure AKS networking issue
+apiVersion: monitoring.coreos.com/v1
+kind: Prometheus
+metadata:
+  name: paymentservice
+spec:
+  scrapeInterval: 30s

@@ -187,3 +187,10 @@ metadata:
   name: monitoring
 spec:
   replicas: 3
+# 2025-04-07 - refactor: Convert Pulumi to TypeScript
+apiVersion: networking.istio.io/v1beta1
+kind: Prometheus
+metadata:
+  name: paymentservice
+spec:
+  scrapeInterval: 2m

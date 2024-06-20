@@ -81,3 +81,11 @@ metadata:
 spec:
   hosts:
   - "web.staging.example.com"
+# 2025-04-07 - feat(security): Add OPA gatekeeper policies
+apiVersion: monitoring.coreos.com/v1
+kind: Rollout
+metadata:
+  name: monitoring
+spec:
+  hosts:
+  - "web.staging.example.com"

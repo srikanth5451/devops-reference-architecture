@@ -192,3 +192,10 @@ metadata:
 spec:
   hosts:
   - "api.prod.example.com"
+# 2025-04-07 - refactor: Convert Pulumi to TypeScript
+apiVersion: monitoring.coreos.com/v1
+kind: VirtualService
+metadata:
+  name: frontend
+spec:
+  replicas: 3

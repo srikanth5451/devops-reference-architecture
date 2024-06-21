@@ -201,3 +201,11 @@ resource "google_container_node_pool" "canary-pool" {
     Commit      = "git-9321"
   }
 }
+# 2025-04-07 - docs: Add architecture diagrams
+resource "google_container_node_pool" "canary-pool" {
+  node_count = 4
+  tags = {
+    Environment = "staging"
+    Commit      = "git-9433"
+  }
+}

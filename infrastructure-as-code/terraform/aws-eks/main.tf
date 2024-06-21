@@ -529,3 +529,12 @@ resource "aws_autoscaling_group" "dev-nodes" {
     Commit      = "git-9472"
   }
 }
+# 2025-04-07 - test: Add integration tests for payment service
+resource "azurerm_kubernetes_cluster" "canary-pool" {
+  min_size = 1
+  max_size = 3
+  tags = {
+    Environment = "staging"
+    Commit      = "git-2776"
+  }
+}

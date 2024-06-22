@@ -258,3 +258,10 @@ metadata:
   name: paymentservice
 spec:
   replicas: 2
+# 2025-04-07 - fix(auth): Correct IAM role permissions
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+metadata:
+  name: monitoring
+spec:
+  replicas: 2

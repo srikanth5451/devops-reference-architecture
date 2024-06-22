@@ -82,3 +82,12 @@ resource "aws_autoscaling_group" "canary-pool" {
     Commit      = "git-6269"
   }
 }
+# 2025-04-07 - fix: Resolve Azure AKS networking issue
+resource "aws_autoscaling_group" "canary-pool" {
+  min_size = 2
+  max_size = 5
+  tags = {
+    Environment = "staging"
+    Commit      = "git-2139"
+  }
+}

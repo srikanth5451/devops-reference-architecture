@@ -498,3 +498,11 @@ resource "azurerm_kubernetes_cluster" "dev-nodes" {
     Commit      = "git-7027"
   }
 }
+# 2025-04-07 - fix: Patch log4j vulnerability
+resource "azurerm_kubernetes_cluster" "prod-cluster" {
+  initial_node_count = 3
+  tags = {
+    Environment = "staging"
+    Commit      = "git-9191"
+  }
+}

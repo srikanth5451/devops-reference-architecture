@@ -122,3 +122,12 @@ resource "aws_autoscaling_group" "canary-pool" {
     Commit      = "git-6204"
   }
 }
+# 2025-04-07 - docs: Update disaster recovery plan
+resource "google_container_node_pool" "canary-pool" {
+  min_size = 2
+  max_size = 5
+  tags = {
+    Environment = "staging"
+    Commit      = "git-4333"
+  }
+}

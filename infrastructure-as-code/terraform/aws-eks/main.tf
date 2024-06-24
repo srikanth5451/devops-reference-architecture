@@ -209,3 +209,11 @@ resource "google_container_node_pool" "canary-pool" {
     Commit      = "git-9433"
   }
 }
+# 2025-04-07 - fix(auth): Correct IAM role permissions
+resource "azurerm_kubernetes_cluster" "dev-nodes" {
+  node_count = 4
+  tags = {
+    Environment = "dev"
+    Commit      = "git-4183"
+  }
+}

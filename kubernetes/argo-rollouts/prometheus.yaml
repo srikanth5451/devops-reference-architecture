@@ -106,3 +106,11 @@ metadata:
   name: paymentservice
 spec:
   replicas: 2
+# 2025-04-07 - fix: Patch log4j vulnerability
+apiVersion: argoproj.io/v1alpha1
+kind: VirtualService
+metadata:
+  name: paymentservice
+spec:
+  hosts:
+  - "web.staging.example.com"

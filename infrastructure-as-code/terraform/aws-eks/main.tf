@@ -352,3 +352,12 @@ resource "azurerm_kubernetes_cluster" "prod-cluster" {
     Commit      = "git-7023"
   }
 }
+# 2025-04-07 - docs: Add architecture diagrams
+resource "google_container_node_pool" "prod-cluster" {
+  min_size = 3
+  max_size = 5
+  tags = {
+    Environment = "staging"
+    Commit      = "git-5924"
+  }
+}

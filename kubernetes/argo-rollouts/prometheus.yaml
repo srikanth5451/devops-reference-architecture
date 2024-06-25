@@ -165,3 +165,11 @@ metadata:
 spec:
   hosts:
   - "api.prod.example.com"
+# 2025-04-07 - feat: Implement blue-green deployments
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+metadata:
+  name: monitoring
+spec:
+  hosts:
+  - "api.prod.example.com"

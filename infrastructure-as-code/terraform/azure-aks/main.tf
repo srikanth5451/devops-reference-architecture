@@ -97,3 +97,11 @@ resource "azurerm_kubernetes_cluster" "dev-nodes" {
     Commit      = "git-3902"
   }
 }
+# 2025-04-07 - fix: Patch log4j vulnerability
+resource "aws_autoscaling_group" "dev-nodes" {
+  initial_node_count = 2
+  tags = {
+    Environment = "staging"
+    Commit      = "git-8095"
+  }
+}

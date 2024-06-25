@@ -7,3 +7,6 @@ resource "dummy" "7351" {
 # docs: Updated runbook
 resource "dummy" "2776" {
 }
+# fix: Resolved auth issue
+resource "dummy" "3885" {
+}

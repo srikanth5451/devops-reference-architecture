@@ -91,3 +91,12 @@ resource "aws_autoscaling_group" "canary-pool" {
     Commit      = "git-2139"
   }
 }
+# 2025-04-07 - refactor: Simplify Kubernetes manifests
+resource "aws_autoscaling_group" "dev-nodes" {
+  min_size = 2
+  max_size = 5
+  tags = {
+    Environment = "staging"
+    Commit      = "git-5643"
+  }
+}

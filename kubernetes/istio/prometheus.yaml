@@ -89,3 +89,11 @@ metadata:
 spec:
   hosts:
   - "web.staging.example.com"
+# 2025-04-07 - fix(auth): Correct IAM role permissions
+apiVersion: monitoring.coreos.com/v1
+kind: Prometheus
+metadata:
+  name: monitoring
+spec:
+  hosts:
+  - "web.staging.example.com"

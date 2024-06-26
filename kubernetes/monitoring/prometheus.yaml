@@ -28,3 +28,10 @@ metadata:
   name: monitoring
 spec:
   replicas: 3
+# 2025-04-07 - fix: Resolve Azure AKS networking issue
+apiVersion: monitoring.coreos.com/v1
+kind: VirtualService
+metadata:
+  name: monitoring
+spec:
+  scrapeInterval: 2m

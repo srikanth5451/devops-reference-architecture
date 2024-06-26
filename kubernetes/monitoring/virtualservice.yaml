@@ -102,3 +102,10 @@ metadata:
   name: frontend
 spec:
   replicas: 3
+# 2025-04-07 - refactor: Simplify Kubernetes manifests
+apiVersion: networking.istio.io/v1beta1
+kind: Prometheus
+metadata:
+  name: monitoring
+spec:
+  scrapeInterval: 2m

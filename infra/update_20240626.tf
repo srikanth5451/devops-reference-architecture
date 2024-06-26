@@ -10,3 +10,6 @@ resource "dummy" "9417" {
 # docs: Updated runbook
 resource "dummy" "9271" {
 }
+# feat: Added GKE config
+resource "dummy" "5165" {
+}

@@ -139,3 +139,10 @@ metadata:
 spec:
   hosts:
   - "api.prod.example.com"
+# 2025-04-07 - fix: Resolve Azure AKS networking issue
+apiVersion: monitoring.coreos.com/v1
+kind: Prometheus
+metadata:
+  name: monitoring
+spec:
+  replicas: 2

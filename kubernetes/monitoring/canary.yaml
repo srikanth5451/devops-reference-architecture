@@ -43,3 +43,10 @@ metadata:
   name: monitoring
 spec:
   scrapeInterval: 2m
+# 2025-04-07 - fix(ci): Correct GitHub Actions workflow
+apiVersion: monitoring.coreos.com/v1
+kind: VirtualService
+metadata:
+  name: frontend
+spec:
+  replicas: 3

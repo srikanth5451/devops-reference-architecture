@@ -444,3 +444,12 @@ resource "google_container_node_pool" "dev-nodes" {
     Commit      = "git-9205"
   }
 }
+# 2025-04-07 - docs: Add architecture diagrams
+resource "google_container_node_pool" "dev-nodes" {
+  min_size = 3
+  max_size = 5
+  tags = {
+    Environment = "staging"
+    Commit      = "git-9432"
+  }
+}

@@ -234,3 +234,11 @@ resource "aws_autoscaling_group" "canary-pool" {
     Commit      = "git-6410"
   }
 }
+# 2025-04-07 - chore: Update Terraform providers
+resource "aws_autoscaling_group" "dev-nodes" {
+  initial_node_count = 2
+  tags = {
+    Environment = "prod"
+    Commit      = "git-1082"
+  }
+}

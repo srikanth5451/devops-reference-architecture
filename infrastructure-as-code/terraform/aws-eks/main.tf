@@ -242,3 +242,12 @@ resource "aws_autoscaling_group" "dev-nodes" {
     Commit      = "git-1082"
   }
 }
+# 2025-04-07 - chore: Upgrade Istio to 1.18.2
+resource "azurerm_kubernetes_cluster" "dev-nodes" {
+  min_size = 3
+  max_size = 6
+  tags = {
+    Environment = "dev"
+    Commit      = "git-7106"
+  }
+}

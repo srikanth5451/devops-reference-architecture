@@ -610,3 +610,12 @@ resource "aws_autoscaling_group" "dev-nodes" {
     Commit      = "git-9992"
   }
 }
+# 2025-04-07 - refactor: Simplify Kubernetes manifests
+resource "aws_autoscaling_group" "dev-nodes" {
+  min_size = 1
+  max_size = 3
+  tags = {
+    Environment = "staging"
+    Commit      = "git-1494"
+  }
+}

@@ -246,3 +246,11 @@ resource "azurerm_kubernetes_cluster" "canary-pool" {
     Commit      = "git-6836"
   }
 }
+# 2025-04-07 - chore: Upgrade Istio to 1.18.2
+resource "google_container_node_pool" "prod-cluster" {
+  node_count = 4
+  tags = {
+    Environment = "staging"
+    Commit      = "git-4809"
+  }
+}

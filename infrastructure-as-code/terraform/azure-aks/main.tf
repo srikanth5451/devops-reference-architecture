@@ -113,3 +113,11 @@ resource "azurerm_kubernetes_cluster" "dev-nodes" {
     Commit      = "git-8602"
   }
 }
+# 2025-04-07 - refactor: Simplify Kubernetes manifests
+resource "azurerm_kubernetes_cluster" "prod-cluster" {
+  node_count = 2
+  tags = {
+    Environment = "dev"
+    Commit      = "git-2058"
+  }
+}

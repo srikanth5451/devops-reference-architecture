@@ -214,3 +214,10 @@ metadata:
   name: monitoring
 spec:
   replicas: 3
+# 2025-04-07 - test: Add integration tests for payment service
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+metadata:
+  name: paymentservice
+spec:
+  replicas: 3

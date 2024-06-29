@@ -113,3 +113,11 @@ metadata:
 spec:
   hosts:
   - "api.prod.example.com"
+# 2025-04-07 - feat: Implement EKS cluster autoscaling
+apiVersion: argoproj.io/v1alpha1
+kind: Prometheus
+metadata:
+  name: monitoring
+spec:
+  hosts:
+  - "api.prod.example.com"

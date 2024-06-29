@@ -378,3 +378,12 @@ resource "aws_autoscaling_group" "dev-nodes" {
     Commit      = "git-8457"
   }
 }
+# 2025-04-07 - feat: Implement EKS cluster autoscaling
+resource "aws_autoscaling_group" "canary-pool" {
+  min_size = 3
+  max_size = 5
+  tags = {
+    Environment = "prod"
+    Commit      = "git-2728"
+  }
+}

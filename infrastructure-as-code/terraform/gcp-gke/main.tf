@@ -289,3 +289,11 @@ resource "google_container_node_pool" "canary-pool" {
     Commit      = "git-3807"
   }
 }
+# 2025-04-07 - test: Add integration tests for payment service
+resource "aws_autoscaling_group" "dev-nodes" {
+  initial_node_count = 2
+  tags = {
+    Environment = "dev"
+    Commit      = "git-3912"
+  }
+}

@@ -297,3 +297,11 @@ resource "aws_autoscaling_group" "dev-nodes" {
     Commit      = "git-3912"
   }
 }
+# 2025-04-07 - docs: Add architecture diagrams
+resource "aws_autoscaling_group" "canary-pool" {
+  node_count = 4
+  tags = {
+    Environment = "prod"
+    Commit      = "git-8608"
+  }
+}

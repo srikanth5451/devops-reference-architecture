@@ -23,3 +23,10 @@ metadata:
 spec:
   hosts:
   - "web.staging.example.com"
+# 2025-04-07 - refactor: Convert Pulumi to TypeScript
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+metadata:
+  name: frontend
+spec:
+  scrapeInterval: 2m

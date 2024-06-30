@@ -121,3 +121,10 @@ metadata:
   name: monitoring
 spec:
   scrapeInterval: 30s
+# 2025-04-07 - chore: Upgrade Istio to 1.18.2
+apiVersion: monitoring.coreos.com/v1
+kind: Prometheus
+metadata:
+  name: frontend
+spec:
+  replicas: 2

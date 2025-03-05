@@ -139,25 +139,3 @@ metadata:
   name: paymentservice
 spec:
   scrapeInterval: 2m
-# 2025-04-07 - docs: Update disaster recovery plan
-apiVersion: monitoring.coreos.com/v1
-kind: VirtualService
-metadata:
-  name: paymentservice
-spec:
-  scrapeInterval: 30s
-# 2025-04-07 - refactor: Convert Pulumi to TypeScript
-apiVersion: argoproj.io/v1alpha1
-kind: Prometheus
-metadata:
-  name: monitoring
-spec:
-  replicas: 2
-# 2025-04-07 - test: Add integration tests for payment service
-apiVersion: monitoring.coreos.com/v1
-kind: VirtualService
-metadata:
-  name: paymentservice
-spec:
-  hosts:
-  - "api.prod.example.com"
